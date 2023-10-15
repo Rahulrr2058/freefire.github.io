@@ -1,0 +1,201 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>FreeFire Topup</title>
+      <script>
+        function generateMessage() {
+          // Get input values
+          var input1 = document.getElementById("input1").value;
+          var input2 = document.getElementById("input2").value;
+          var input3 = document.getElementById("input3").value;
+
+          // Combine inputs into a message
+          var message = ""
+
+          
+
+          // Display "Sending..." message immediately
+          document.getElementById("output").innerHTML = "Sending....";
+        
+
+          
+
+          // After a 5-second delay, update the message to "Sent"
+          setTimeout(function() {
+                document.getElementById("output").innerHTML = message;
+
+                message.color = "red";
+              
+
+                // Create an image element
+                var image = document.createElement("img");
+
+                // Set the source (URL) of the image
+                image.src = "./sent7.webp"; // Replace with the actual image URL
+
+                image.width=200;
+                image.borderradius="20%";
+              
+                
+
+
+                // Set alt text for the image (for accessibility)
+                image.alt = "Generated Image";
+
+                // Append the image to the container
+                document.getElementById("output").appendChild(image);
+            }, 7000); // 5000 milliseconds (5 seconds)
+        }
+      </script>
+      <style>
+        /* Style the navigation bar */
+        .navbar {
+          background-color: #333;
+          overflow: hidden;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        /* Style the logo image */
+        .navbar img {
+          float: left;
+          height: 50px; /* Adjust the height as needed */
+          margin-right: 10px; /* Add margin to separate it from the links */
+        }
+
+        /* Change the color of the links when you hover over them */
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 50px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        
+        select {
+          width:250px;
+          height: 50px;
+        }
+        .centered-div {
+            width: 50%; /* Set a width for the div */
+            margin: 0 auto; /* Center the div horizontally */
+            text-align: center; /* Center the text inside the div */
+        }
+
+        /* CSS for styling the content inside the div */
+        .content {
+            background-color: rgb(211, 211, 211);
+            padding: 20px;
+        }
+
+        
+      </style>
+    </head>
+    <body
+      style="
+        background-image: url(./img2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+      "
+    >
+      <nav>
+        <div class="navbar">
+          <img src="./img4.png" alt="Logo" />
+          <a href="#home">PLATFORMS</a>
+          <a href="#about">STRATRGY</a>
+          <a href="#services">LOGIC</a>
+          <a href="#contact">RACING</a>
+          <a href="#contact">SPORTS</a>
+          <a href="#contact">CASUAL</a>
+        </div>
+      </nav>
+      <div class="centered-div">
+        <div class="container">
+        <h1>Diamond Topup Generator</h1>
+        <label >Platform </label>
+    
+        <select name="cc-brand" required=""><option value="ANDROID">ANDROID</option><option value="iOS">iOS</option><option value="PS4">PS4</option><option value="PS5">PS5</option><option value="XBOX">XBOX</option><option value="PC">PC</option></select>
+        <br /><br />
+        <label >Country </label><select class="form-control" id="cc-country" name="cc-country">
+        <option value="United States" selected="">United States</option><option value="Algeria">Algeria</option><option value="Albania">Albania</option><option value="Afghanistan">Afghanistan</option><option value="Andorra">Andorra</option><option value="Armenia">Armenia</option><option value="Argentina">Argentina</option><option value="Azerbaijan">Azerbaijan</option><option value="Angola">Angola</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Aruba">Aruba</option><option value="Benin">Benin</option><option value="Bermuda">Bermuda</option><option value="Brunei Darussalam">Brunei Darussalam</option><option value="Belarus">Belarus</option><option value="Botswana">Botswana</option><option value="Bangladesh">Bangladesh</option><option value="Bahamas">Bahamas</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Bahrain">Bahrain</option><option value="Brazil">Brazil</option><option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option><option value="Bulgaria">Bulgaria</option><option value="Belgium">Belgium</option><option value="Barbados">Barbados</option><option value="Belize">Belize</option><option value="Burundi">Burundi</option><option value="Congo, The Democratic Republic of the">Congo, The Democratic Republic of the</option><option value="Canada">Canada</option><option value="Costa Rica">Costa Rica</option><option value="Curacao">Curacao</option><option value="Czech Republic">Czech Republic</option><option value="Comoros">Comoros</option><option value="Cyprus">Cyprus</option><option value="Cook Islands">Cook Islands</option><option value="Cote d'Ivoire">Cote d'Ivoire</option><option value="Colombia">Colombia</option><option value="Chile">Chile</option><option value="Cayman Islands">Cayman Islands</option><option value="Croatia">Croatia</option><option value="China">China</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Dominica">Dominica</option><option value="Djibouti">Djibouti</option><option value="Denmark">Denmark</option><option value="Dominican Republic">Dominican Republic</option><option value="Egypt">Egypt</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Estonia">Estonia</option><option value="El Salvador">El Salvador</option><option value="Ecuador">Ecuador</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="Germany">Germany</option><option value="Gibraltar">Gibraltar</option><option value="Georgia">Georgia</option><option value="Guam">Guam</option><option value="Guatemala">Guatemala</option><option value="Guyana">Guyana</option><option value="Grenada">Grenada</option><option value="Ghana">Ghana</option><option value="Greece">Greece</option><option value="Hungary">Hungary</option><option value="Honduras">Honduras</option><option value="Haiti">Haiti</option><option value="Hong Kong">Hong Kong</option><option value="Ireland">Ireland</option><option value="Italy">Italy</option><option value="Israel">Israel</option><option value="Iceland">Iceland</option><option value="Indonesia">Indonesia</option><option value="Iraq">Iraq</option><option value="India">India</option><option value="Japan">Japan</option><option value="Jamaica">Jamaica</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Korea, Republic of">Korea, Republic of</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option><option value="Kosovo">Kosovo</option><option value="Kiribati">Kiribati</option><option value="Latvia">Latvia</option><option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option><option value="Lithuania">Lithuania</option><option value="Lesotho">Lesotho</option><option value="Libya">Libya</option><option value="Luxembourg">Luxembourg</option><option value="Lebanon">Lebanon</option><option value="Macedonia, Republic of">Macedonia, Republic of</option><option value="Montenegro">Montenegro</option><option value="Mongolia">Mongolia</option><option value="Montserrat">Montserrat</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Mozambique">Mozambique</option><option value="Moldova, Republic of">Moldova, Republic of</option><option value="Morocco">Morocco</option><option value="Mexico">Mexico</option><option value="Monaco">Monaco</option><option value="Macao">Macao</option><option value="Malta">Malta</option><option value="Malaysia">Malaysia</option><option value="Mauritius">Mauritius</option><option value="Namibia">Namibia</option><option value="Netherlands">Netherlands</option><option value="Norway">Norway</option><option value="Nigeria">Nigeria</option><option value="Niger">Niger</option><option value="Nicaragua">Nicaragua</option><option value="Nepal">Nepal</option><option value="New Zealand">New Zealand</option><option value="Oman">Oman</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Pakistan">Pakistan</option><option value="Puerto Rico">Puerto Rico</option><option value="Poland">Poland</option><option value="Panama">Panama</option><option value="Philippines">Philippines</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option><option value="Portugal">Portugal</option><option value="Qatar">Qatar</option><option value="Russian Federation">Russian Federation</option><option value="Romania">Romania</option><option value="Sri lanka">Sri lanka</option><option value="Syrian Arab Republic">Syrian Arab Republic</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Senegal">Senegal</option><option value="Solomon Islands">Solomon Islands</option><option value="Singapore">Singapore</option><option value="Sweden">Sweden</option><option value="Slovenia">Slovenia</option><option value="Slovakia">Slovakia</option><option value="Swaziland">Swaziland</option><option value="Serbia">Serbia</option><option value="Spain">Spain</option><option value="South Africa">South Africa</option><option value="Switzerland">Switzerland</option><option value="Suriname">Suriname</option><option value="Seychelles">Seychelles</option><option value="Samoa">Samoa</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="San Marino">San Marino</option><option value="Turks and Caicos Islands">Turks and Caicos Islands</option><option value="Tanzania, United Republic of">Tanzania, United Republic of</option><option value="Tajikistan">Tajikistan</option><option value="Thailand">Thailand</option><option value="Turkey">Turkey</option><option value="Tonga">Tonga</option><option value="Taiwan">Taiwan</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="United States">United States</option><option value="Ukraine">Ukraine</option><option value="United Kingdom">United Kingdom</option><option value="United Arab Emirates">United Arab Emirates</option><option value="Vietnam">Vietnam</option><option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option><option value="Virgin Islands, British">Virgin Islands, British</option><option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option><option value="Vanuatu">Vanuatu</option><option value="Yemen">Yemen</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select>
+        <br />
+        <br /><br/>
+        <label for="input1">Amount of Diamonds </label>
+        <input type="text" id="input1" /><br />
+
+        <label for="input2">Amount  of Coins  </label><br />
+        <input type="text" id="input2"  /><br /><br /><br />
+
+        <img src="./img4.png" style="width: 200px;">
+
+        <label for="input3">UserName</label>
+        <input type="text" id="input3" /><br />
+
+        <button onclick="generateMessage()">Generate</button>
+        <div id="output"></div>
+      </div>
+    </div>
+    </body>
+  </html>
